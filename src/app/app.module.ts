@@ -10,6 +10,8 @@ import { PetComponent } from './modules/pet/pet/pet.component';
 import { RevisionComponent } from './modules/revision/revision/revision.component';
 import { CardComponent } from './modules/core/design-system/card/card.component';
 import { ContactComponent } from './modules/contact/contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ContactComponent } from './modules/contact/contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [
